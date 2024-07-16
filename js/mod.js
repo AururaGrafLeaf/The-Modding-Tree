@@ -1,6 +1,6 @@
 let modInfo = {
-	name: "the generator tree",
-	id: "AurouraGrafLeafRBX",
+	name: "The generator Tree ",
+	id: "MYTRRREEE",
 	author: "AurouraGrafLeaf",
 	pointsName: "points",
 	modFiles: ["layers.js", "tree.js"],
@@ -18,9 +18,10 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
+	<h3>v1.1</h3><br>
 		- Added things.<br>
-		- Added stuff.`
+		- Added Rebith layer for all gen 15
+		- added generator 1-5.`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
