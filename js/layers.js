@@ -7,8 +7,8 @@ addLayer("A1", {
 		points: new Decimal(0),
     }},
     color: "#A18A85",
-    requires: new Decimal(10), 
-    resource: "points", 
+    requires: new Decimal(eee1e134,237), 
+    resource: "WIP (WORK IN PROGRESSS COME BACK AT NEXT UPDATE PLS CHECK)", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
     type: "normal", 
@@ -26,6 +26,8 @@ addLayer("A1", {
     ],
     layerShown(){return true}
 
+     
+
     
 })
 
@@ -38,8 +40,8 @@ addLayer("A2", {
 		points: new Decimal(0),
     }},
     color: "#A18A85",
-    requires: new Decimal(500), 
-    resource: "2 points", 
+    requires: new Decimal(eee1e134,237), 
+    resource: "clicky ;]", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
     type: "normal", 
@@ -69,7 +71,7 @@ addLayer("prestige", {
 		points: new Decimal(0),
     }},
     color: "#A18A85",
-    requires: new Decimal(1E308), 
+    requires: new Decimal(eee1e134,237), 
     resource: "prestige points", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
@@ -84,7 +86,7 @@ addLayer("prestige", {
     },
     row: 16, 
     hotkeys: [
-        {key: "p", description: "P: Reset for prestige points but sad news this represent all reset sry", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
 
