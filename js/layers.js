@@ -102,7 +102,7 @@ addLayer("THIS WILL WAIT", {
 		points: new Decimal(0),
     }},
     color: "#A53087",
-    requires: new Decimal(5), 
+    requires: new Decimal(10), 
     resource: "WAITING POINTS", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
@@ -110,10 +110,10 @@ addLayer("THIS WILL WAIT", {
     exponent: 0.5, 
     gainMult() { 
         mult = new Decimal(2)
-        return mult
+        return mult (2)
     },
     gainExp() { 
-        return new Decimal(0)
+        return new Decimal(1)
     },
     row: 0, 
     hotkeys: [
