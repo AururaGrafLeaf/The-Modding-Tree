@@ -1,6 +1,6 @@
 addLayer("A1", {
     name: "POINTS", 
-    symbol: "PA1", 
+    symbol: "Ω1", 
     position: 0, 
     startData() { return {
         unlocked: true,
@@ -25,4 +25,13 @@ addLayer("A1", {
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
+
+    upgrades: {
+        11: {
+            description: "start now :>)",
+            cost: new Decimal(1),
+            etc
+        },
+        etc
+    }
 })
