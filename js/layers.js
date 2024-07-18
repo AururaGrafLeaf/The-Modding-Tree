@@ -94,15 +94,15 @@ addLayer("prestige", {
 })
 
 addLayer("THIS WILL WAIT", {
-    name: "WAITING POINTS", 
-    symbol: "P", 
+    name: "WAIT FOR THE UPDATE PLSSSS", 
+    symbol: ":D", 
     position: 0, 
     startData() { return {
         unlocked: true,
 		points: new Decimal(0),
     }},
     color: "#A53087",
-    requires: new Decimal(1e134,237), 
+    requires: new Decimal(100), 
     resource: "WAITING POINTS", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
@@ -115,7 +115,7 @@ addLayer("THIS WILL WAIT", {
     gainExp() { 
         return new Decimal(2)
     },
-    row: 1, 
+    row: 0, 
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
