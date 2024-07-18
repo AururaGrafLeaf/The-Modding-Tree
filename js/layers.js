@@ -26,12 +26,5 @@ addLayer("A1", {
     ],
     layerShown(){return true}
 
-    upgrades: {
-        11: {
-            description: "start now :>)",
-            cost: new Decimal(1),
-            etc
-        },
-        etc
-    }
+    
 })
