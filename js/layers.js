@@ -22,7 +22,69 @@ addLayer("A1", {
     },
     row: 0, 
     hotkeys: [
+        {key: "p", description: "THIS RESENTS NOTHING", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+    ],
+    layerShown(){return true}
+
+    
+})
+
+addLayer("A2", {
+    name: "POINTS", 
+    symbol: "Ω2", 
+    position: 1, 
+    startData() { return {
+        unlocked: true,
+		points: new Decimal(0),
+    }},
+    color: "#A18A85",
+    requires: new Decimal(500), 
+    resource: "2 points", 
+    baseResource: "points", 
+    baseAmount() {return player.points}, 
+    type: "normal", 
+    exponent: 0.5, 
+    gainMult() { 
+        mult = new Decimal(1)
+        return mult
+    },
+    gainExp() { 
+        return new Decimal(1)
+    },
+    row: 0, 
+    hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+    ],
+    layerShown(){return true}
+
+    
+})
+
+addLayer("prestige", {
+    name: "prestige POINTS", 
+    symbol: "P", 
+    position: 16, 
+    startData() { return {
+        unlocked: true,
+		points: new Decimal(0),
+    }},
+    color: "#A18A85",
+    requires: new Decimal(1E308), 
+    resource: "2 points", 
+    baseResource: "points", 
+    baseAmount() {return player.points}, 
+    type: "normal", 
+    exponent: 0.5, 
+    gainMult() { 
+        mult = new Decimal(1)
+        return mult
+    },
+    gainExp() { 
+        return new Decimal(1)
+    },
+    row: 0, 
+    hotkeys: [
+        {key: "p", description: "P: Reset for prestige points but sad news this represent all reset sry", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
 
