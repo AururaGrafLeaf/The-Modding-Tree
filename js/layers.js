@@ -32,7 +32,7 @@ addLayer("A1", {
 addLayer("A2", {
     name: "POINTS", 
     symbol: "Ω2", 
-    position: 1, 
+    position: 0, 
     startData() { return {
         unlocked: true,
 		points: new Decimal(0),
@@ -51,7 +51,7 @@ addLayer("A2", {
     gainExp() { 
         return new Decimal(1)
     },
-    row: 0, 
+    row: 2, 
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
@@ -63,14 +63,14 @@ addLayer("A2", {
 addLayer("prestige", {
     name: "prestige POINTS", 
     symbol: "P", 
-    position: 16, 
+    position: 0, 
     startData() { return {
         unlocked: true,
 		points: new Decimal(0),
     }},
     color: "#A18A85",
     requires: new Decimal(1E308), 
-    resource: "2 points", 
+    resource: "prestige points", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
     type: "normal", 
@@ -82,7 +82,7 @@ addLayer("prestige", {
     gainExp() { 
         return new Decimal(1)
     },
-    row: 0, 
+    row: 16, 
     hotkeys: [
         {key: "p", description: "P: Reset for prestige points but sad news this represent all reset sry", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
