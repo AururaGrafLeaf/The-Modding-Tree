@@ -110,7 +110,7 @@ addLayer("THIS WILL WAIT", {
     exponent: 0.5, 
     gainMult() { 
         mult = new Decimal(2)
-        return mult (2)
+        return mult 
     },
     gainExp() { 
         return new Decimal(1)
