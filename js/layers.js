@@ -102,7 +102,7 @@ addLayer("THIS WILL WAIT", {
 		points: new Decimal(0),
     }},
     color: "#A53087",
-    requires: new Decimal(1), 
+    requires: new Decimal(5), 
     resource: "WAITING POINTS", 
     baseResource: "points", 
     baseAmount() {return player.points}, 
